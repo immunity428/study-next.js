@@ -7,8 +7,9 @@ const Pencil = dynamic(
 
 const EditButton = () => {
   return (
-    <div className='hover:bg-[#B8B8B8] hover:cursor-pointer rounded-full w-5 h-5 opacity-80'>
-      <Pencil className='w-full h-full object-cover alt="EditButton' />
+    <div className='relative rounded-full w-5 h-5 flex justify-center items-center'>
+      <Pencil className='z-0' />
+      <div className='absolute inset-0 hover:bg-[#B8B8B8] opacity-20 rounded-full z-1' />
     </div>
   );
 };
