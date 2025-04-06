@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 
 const Plus = dynamic(() => import('../../../../../public/assets/svg/Plus.svg'));
 
-const EditButton = () => {
+const AddTaskButton = () => {
   return (
     <div className='relative w-35 h-8 flex justify-center items-center'>
       <div className='flex flex-row items-center justify-center gap-[10px] px-[2px] py-[6px]'>
@@ -17,4 +17,4 @@ const EditButton = () => {
   );
 };
 
-export default EditButton;
+export default AddTaskButton;
