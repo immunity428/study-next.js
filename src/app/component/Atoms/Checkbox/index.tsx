@@ -1,9 +1,5 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
-
-const Check = dynamic(
-  () => import('../../../../../public/assets/svg/check.svg')
-);
+import Check from '../../../../../public/check.svg';
 
 const Checkbox = () => {
   return (
