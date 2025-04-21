@@ -45,7 +45,7 @@ const Input: FC<InputProps> = ({ onEditComplete, defaultValue }) => {
         // input要素でキーが押されたときに呼ばれる関数
         defaultValue={defaultValue ?? ''}
         // defaultValueは初期値を設定するためのプロパティ
-        className='w-full bg-transparent text-white outline-none'
+        className='w-full bg-transparent text-[#B8B8B8] outline-none font-noto'
       />
     </div>
   );
