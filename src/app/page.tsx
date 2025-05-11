@@ -1,17 +1,16 @@
-import Title from './component/Atoms/Title/index';
-import EditButton from './component/Atoms/EditButton/index';
-import AddTaskButton from './component/Atoms/AddTaskButton/index';
-import Checkbox from './component/Atoms/Checkbox/index';
-import Input from './component/Atoms/Input/index';
+'use client';
+
+import Task from './component/Molecules/Task/index';
 
 export default function Home() {
   return (
     <>
-      <Title />
-      <EditButton />
-      <AddTaskButton />
-      <Checkbox />
-      <Input />
+      <Task
+        onTaskNameChange={(name) => console.log('Task name changed:', name)}
+        onTaskComplete={() => console.log('Task completed')}
+        taskName='Sample Task'
+        defaultEditing={false}
+      />
     </>
   );
 }
