@@ -22,6 +22,7 @@ const Task: React.FC<TaskProps> = ({
 
   const onEditComplete = (value: string) => {
     onTaskNameChange(value);
+    setIsEditing(false); // 編集完了後に表示モードに戻す
   };
 
   const onEditButtonClick = () => {
