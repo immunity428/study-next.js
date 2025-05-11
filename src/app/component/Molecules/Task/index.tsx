@@ -31,7 +31,7 @@ const Task: React.FC<TaskProps> = ({
 
   return (
     <div className='flex gap-2 p-1'>
-      <div>
+      <div className='flex items-center'>
         <Checkbox onClick={onTaskComplete} />
       </div>
 
